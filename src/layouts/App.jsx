@@ -1,6 +1,9 @@
+import Uzum from "../pages/Uzum"
 function App() {
     return (
-        <>SAlom</>
+        <>
+<Uzum/>
+        </>
     )
 }
 
