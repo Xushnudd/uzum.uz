@@ -4,7 +4,13 @@ import LandingPage from "../pages/LandingPage"
 
 function App() {
     return (
-        <>SAlom</>
+        <>
+        <div>
+            <Routes>
+                <Route path="/" element={<LandingPage />} />
+            </Routes>
+        </div>
+        </>
     )
 }
 
