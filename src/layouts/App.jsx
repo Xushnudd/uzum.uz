@@ -1,8 +1,16 @@
-import Footer from "../components/Footer"
+import { Routes, Route } from "react-router-dom"
+
+import LandingPage from "../pages/LandingPage"
 
 function App() {
     return (
-        <><Footer /></>
+        <>
+        <div>
+            <Routes>
+                <Route path="/" element={<LandingPage />} />
+            </Routes>
+        </div>
+        </>
     )
 }
 
