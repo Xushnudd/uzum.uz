@@ -41,10 +41,10 @@ function Footer() {
                     <div>
                         <h2 className="font-bold">Uzum ijtimoiy tarmoqlarda</h2>
                         <div className="text-2xl text-gray-600">
-                            <FontAwesomeIcon icon={faInstagram} />
-                            <FontAwesomeIcon icon={faTelegram} />
-                            <FontAwesomeIcon icon={faFacebook} />
-                            <FontAwesomeIcon icon={faYoutube} />
+                            <Link to={"https://instagram.com"}><FontAwesomeIcon icon={faInstagram} /></Link>
+                            <Link to={"https://t.me/"}><FontAwesomeIcon icon={faTelegram} /></Link>
+                            <Link to={"https://facebook.com"}><FontAwesomeIcon icon={faFacebook} /></Link>
+                            <Link to={"https://youtube.com"}><FontAwesomeIcon icon={faYoutube} /></Link>
                         </div>
                     </div>
                 </div>
