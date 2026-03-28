@@ -1,60 +1,61 @@
-function Cards(){
-    return ( 
-<div className="flex justify-between">
-<Cards />
-<Cards />
-<Cards />
-<Cards />
-<Cards />
-<Cards />
-<Cards />
-<Cards />
-<Cards />
-<Cards />
-<Cards />
-<Cards />
-<Cards />
-<Cards />
-<Cards />
-<Cards />
-<Cards />
-<Cards />
-<Cards />
-<Cards />
-<Cards />
-<Cards />
-<Cards />
-<Cards />
-<Cards />
-<Cards />
-<Cards />
-<Cards />
-<Cards />
-<Cards />
-<Cards />
-<Cards />
-<Cards />
-<Cards />
-<Cards />
-<Cards />
-<Cards />
-<Cards />
-<Cards />
-<Cards />
-<Cards />
-<Cards />
-<Cards />
-<Cards />
-<Cards />
-<Cards />
-<Cards />
-<Cards />
-<Cards />
-<Cards />
-<Cards />
-<Cards />
+import Card from "./Card"
 
-</div>
+function Cards() {
+    return (
+        <div className="flex justify-between flex-wrap">
+            <Card />
+            <Card />
+            <Card />
+            <Card />
+            <Card />
+            <Card />
+            <Card />
+            <Card />
+            <Card />
+            <Card />
+            <Card />
+            <Card />
+            <Card />
+            <Card />
+            <Card />
+            <Card />
+            <Card />
+            <Card />
+            <Card />
+            <Card />
+            <Card />
+            <Card />
+            <Card />
+            <Card />
+            <Card />
+            <Card />
+            <Card />
+            <Card />
+            <Card />
+            <Card />
+            <Card />
+            <Card />
+            <Card />
+            <Card />
+            <Card />
+            <Card />
+            <Card />
+            <Card />
+            <Card />
+            <Card />
+            <Card />
+            <Card />
+            <Card />
+            <Card />
+            <Card />
+            <Card />
+            <Card />
+            <Card />
+            <Card />
+            <Card />
+            <Card />
+            <Card />
+        </div>
     )
 }
 export default Cards
