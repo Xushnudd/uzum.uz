@@ -7,8 +7,8 @@ import Footer from "../components/Footer"
 function LandingPage() {
     return (
         <>
-        <div className="p-5">
-            <Uzum />
+        <Uzum />
+        <div className="mx-auto w-300 px-5">
             <Banner />
             <Cards />
             <Card2 />
