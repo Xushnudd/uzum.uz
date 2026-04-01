@@ -1,17 +1,19 @@
+import { Link } from "react-router-dom"
+
 function Uzum() {
   return (<>
     <div className="bg-gray-200 flex pt-3 pb-3">
       <div className="pl-5 pr-5"><i className="fa-solid fa-location-dot" ></i>Toshkent<i class="fa-solid fa-chevron-down" ></i></div>
-      <div className="text-gray-800 pr-75">Topshirish punktlari</div>
+      <Link to={"/uz/about/delivery-points"} className="text-gray-800 pr-75">Topshirish punktlari</Link>
       <div className="text-blue-700 font-bold border border-l-gray-200 border-t-gray-200 border-b-gray-200 border-r-gray-500 pr-5">Sotuvchi bo'lish</div>
       <div className="text-blue-700 font-bold pl-5 pr-5">Topshirish punktini ochish</div>
       <div className="text-gray-600 ">Savol-javob</div>
       <div className="text-gray-600 pr-5">Buyurtmalarim</div>
-      <img src="uzbek flag.png" alt="" className="w-5 h-5 rounded-full" />   <div className="pr-5 pl-1">O'zbekcha</div>
+      <img src="/uzbek flag.png" alt="" className="w-5 h-5 rounded-full" />   <div className="pr-5 pl-1">O'zbekcha</div>
     </div>
 
     <div className="flex mt-5">
-      <img src="uzum2.png" alt="" className="w-10 h-10 rounded-full ml-5" />  <div className="text-blue-600 text-2xl font-bold pl-5">UZUM MARKET </div>
+      <img src="/uzum2.png" alt="" className="w-10 h-10 rounded-full ml-5" />  <div className="text-blue-600 text-2xl font-bold pl-5">UZUM MARKET </div>
       <div className="text-blue-600 border border-blue-100 w-max bg-blue-100  rounded p-1 pl-5 pr-5 ml-10"><i className="fa-solid fa-diagram-next pr-5" ></i>Katalog</div>
       <input type="text" placeholder="Mahsulotlar Izlash" className="border border-gray-300 pr-50 pl-10 ml-10" />
       <i className="fa-solid fa-magnifying-glass  bg-gray-200 pr-10 pt-3 pl-5 text-gray-500" ></i>
