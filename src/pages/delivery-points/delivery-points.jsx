@@ -19,8 +19,8 @@ const DeliveryPoints = () => (
                     <p>Uzum Market jamoasining safiga qo’shilmoqchimisiz? Nima uchun bizga mos kelishingiz haqida so’zlab bering va o’z rezyumengizni yuboring</p>
                 </div>
                 <div className="w-full text-lg flex gap-1.5">
-                    <button className="bg-blue-600 p-2 text-white rounded-lg">Uzum Market`da ishlashni istayman</button>
-                    <button className="bg-gray-300 p-2 rounded-lg">Telegram bot - @Uzum_jbot</button>
+                    <button className="bg-blue-600 p-2 text-white rounded-lg hover:bg-blue-500">Uzum Market`da ishlashni istayman</button>
+                    <button className="bg-gray-300 p-2 rounded-lg hover:bg-gray-400">Telegram bot - @Uzum_jbot</button>
                 </div>
                 <div>
                     <div>Oʻzingizga mos kasbni topadigan ish profillari:</div>
