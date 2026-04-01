@@ -8,10 +8,13 @@ function LandingPage() {
     return (
         <>
         <Uzum />
-        <div className="mx-auto w-300 px-5">
+        <div className="mx-auto w-300 p-5">
             <Banner />
+            <div className="w-full h-10"></div>
             <Cards />
+            <div className="w-full h-10"></div>
             <Card2 />
+            <div className="w-full h-10"></div>
             <Footer />
         </div>
         </>
