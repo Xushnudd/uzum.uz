@@ -7,7 +7,7 @@ function Uzum() {
       <Link to={"/uz/about/delivery-points"} className="text-gray-800 pr-75">Topshirish punktlari</Link>
       <Link to={"https://seller.uzum.uz/"} className="text-blue-700 font-bold border border-l-gray-200 border-t-gray-200 border-b-gray-200 border-r-gray-500 pr-5">Sotuvchi bo'lish</Link>
       <Link to={"https://promo.uzum.uz/uz/promo/pvz"} className="text-blue-700 font-bold pl-5 pr-5">Topshirish punktini ochish</Link>
-      <div className="text-gray-600 ">Savol-javob</div>
+      <Link to={"/uz/faq"} className="text-gray-600 ">Savol-javob</Link>
       <div className="text-gray-600 pr-5">Buyurtmalarim</div>
       <img src="/uzbek flag.png" alt="" className="w-5 h-5 rounded-full" />   <div className="pr-5 pl-1">O'zbekcha</div>
     </div>
