@@ -1,9 +1,18 @@
 import { Link } from "react-router-dom"
+import Katalog from "./Katalog"
+
+function showCity() {
+  return (
+    <div className="absolute left-[30%] top-0 z-20">
+      <Katalog />
+    </div>
+  )
+}
 
 function Uzum() {
   return (<>
     <div className="bg-gray-200 flex pt-3 pb-3">
-      <div className="pl-5 pr-5"><i className="fa-solid fa-location-dot" ></i>Toshkent<i class="fa-solid fa-chevron-down" ></i></div>
+      <div className="pl-5 pr-5" onClick={""}><i className="fa-solid fa-location-dot" ></i>Toshkent<i class="fa-solid fa-chevron-down" ></i></div>
       <Link to={"/uz/about/delivery-points"} className="text-gray-800 pr-75">Topshirish punktlari</Link>
       <Link to={"https://seller.uzum.uz/"} className="text-blue-700 font-bold border border-l-gray-200 border-t-gray-200 border-b-gray-200 border-r-gray-500 pr-5">Sotuvchi bo'lish</Link>
       <Link to={"https://promo.uzum.uz/uz/promo/pvz"} className="text-blue-700 font-bold pl-5 pr-5">Topshirish punktini ochish</Link>
@@ -33,6 +42,7 @@ function Uzum() {
       <div className="pl-5 text-gray-500">Turizm,baliq ovi va ovchilik</div>
       <div className="pl-5 text-gray-500">Yana<i className="fa-solid fa-chevron-down" ></i></div>
     </div>
+    {showCity()}
   </>)
 }
 export default Uzum
