@@ -28,7 +28,7 @@ function Uzum() {
         <i className="fa-solid fa-magnifying-glass  bg-gray-200 pr-10 pt-3 pl-5 text-gray-500" ></i>
         <div className="pl-10"><i className="fa-solid fa-user pr-5" ></i>Kirish</div>
         <div className="pl-10"><i className="fa-solid fa-heart pr-5"></i>Saralangan</div>
-        <div className="pl-10"><i className="fa-solid fa-cart-shopping pr-5" ></i>Savat</div>
+        <Link to={"/uz/cart"} className="pl-10"><i className="fa-solid fa-cart-shopping pr-5" ></i>Savat</Link>
       </div>
 
       <div className="mt-5 flex">
