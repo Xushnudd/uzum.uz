@@ -11,7 +11,7 @@ function Uzum() {
 
   return (
     <>
-      <div className="bg-gray-200 flex pt-3 pb-3">
+      <div className="bg-gray-200 flex gap-1 py-3">
         <div onClick={changeSt} className="px-5 cursor-pointer"><i className="fa-solid fa-location-dot" ></i>Toshkent<i class="fa-solid fa-chevron-down" ></i></div>
         <Link to={"/uz/about/delivery-points"} className="text-gray-800 pr-75">Topshirish punktlari</Link>
         <Link to={"https://seller.uzum.uz/"} className="text-blue-700 font-bold border border-l-gray-200 border-t-gray-200 border-b-gray-200 border-r-gray-500 pr-5">Sotuvchi bo'lish</Link>
