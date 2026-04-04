@@ -22,7 +22,7 @@ function Uzum() {
       </div>
 
       <div className="flex mt-5">
-        <img src="/uzum2.png" alt="" className="w-10 h-10 rounded-full ml-5" />  <div className="text-blue-600 text-2xl font-bold pl-5">UZUM MARKET </div>
+        <Link to={"/"} className="flex"><img src="/uzum2.png" alt="" className="w-10 h-10 rounded-full ml-5" />  <div className="text-blue-600 text-2xl font-bold pl-5">UZUM MARKET </div></Link>
         <div className="text-blue-600 border border-blue-100 w-max bg-blue-100  rounded p-1 pl-5 pr-5 ml-10"><i className="fa-solid fa-diagram-next pr-5" ></i>Katalog</div>
         <input type="text" placeholder="Mahsulotlar Izlash" className="border border-gray-300 pr-50 pl-10 ml-10" />
         <i className="fa-solid fa-magnifying-glass  bg-gray-200 pr-10 pt-3 pl-5 text-gray-500" ></i>
