@@ -1,5 +1,6 @@
 import { Routes, Route } from "react-router-dom"
 
+
 import LandingPage from "../pages/LandingPage"
 
 function App() {
@@ -9,6 +10,8 @@ function App() {
             <Routes>
                 <Route path="/" element={<LandingPage />} />
             </Routes>
+            
+
         </div>
         </>
     )
