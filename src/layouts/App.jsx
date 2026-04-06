@@ -18,8 +18,6 @@ function App() {
                 <Route path="/uz/faq" element={<Faq />} />
                 <Route path="/uz/cart" element={<Cart />} />
             </Routes>
-            
-
         </div>
         </>
     )

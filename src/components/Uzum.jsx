@@ -1,12 +1,18 @@
 import { Link } from "react-router-dom"
 import Katalog from "./Katalog"
 import { useState } from "react"
+import PhoneInput from "./Number"
 
 function Uzum() {
   const [st, setst] = useState(false)
+  const [ph, setph] = useState(false)
 
   function changeSt() {
     setst(!st)
+  }
+
+  function changePh() {
+    setph(!ph)
   }
 
   return (
@@ -26,7 +32,7 @@ function Uzum() {
         <div className="text-blue-600 border border-blue-100 w-max bg-blue-100  rounded p-1 pl-5 pr-5 ml-10"><i className="fa-solid fa-diagram-next pr-5" ></i>Katalog</div>
         <input type="text" placeholder="Mahsulotlar Izlash" className="border border-gray-300 pr-50 pl-10 ml-10" />
         <i className="fa-solid fa-magnifying-glass  bg-gray-200 pr-10 pt-3 pl-5 text-gray-500" ></i>
-        <div className="pl-10"><i className="fa-solid fa-user pr-5" ></i>Kirish</div>
+        <div onClick={changePh} className="pl-10 cursor-pointer"><i className="fa-solid fa-user pr-5" ></i>Kirish</div>
         <div className="pl-10"><i className="fa-solid fa-heart pr-5"></i>Saralangan</div>
         <Link to={"/uz/cart"} className="pl-10"><i className="fa-solid fa-cart-shopping pr-5" ></i>Savat</Link>
       </div>
@@ -43,6 +49,9 @@ function Uzum() {
         <div className="pl-5 text-gray-500">Yana<i className="fa-solid fa-chevron-down" ></i></div>
       </div>
       <div onClick={changeSt}><Katalog on={st}/></div>
+      <div>
+        {ph ? <div className="absolute left-1/3 z-30"><PhoneInput /></div> : null}
+      </div>
     </>)
 }
 export default Uzum
