@@ -2,7 +2,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faCreditCard,faStar, faBagShopping} from '@fortawesome/free-solid-svg-icons'
 function Card({disPrice,price,inMonth,about,sellers,picture}) {
     return (
-        <div className="border border-white w-70 h-140 m-5 rounded-xl shadow-2xl ">
+        <div className="border border-white w-70 m-5 rounded-xl shadow-2xl ">
             <div><img src={picture} alt="" className="w-70 h-90 rounded-xl" /></div>
             <div className="p-2 ">
                 <div className="text-purple-600 font-bold ">{disPrice}<FontAwesomeIcon icon={faCreditCard} /></div>
