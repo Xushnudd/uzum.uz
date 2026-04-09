@@ -2,7 +2,23 @@ import { Link } from "react-router-dom";
 import Card2 from "../../components/Card2";
 import Footer from "../../components/Footer";
 import Uzum from "../../components/Uzum";
+import useCartStore from "../../store/CartStore";
 
+function Calc({product}) {
+    const cartItems = useCartStore((state) => state.cartItems);
+    const addToCart = useCartStore((state) => state.addToCart);
+    return (
+        <div>
+            <div>
+                <h3>{product.name}</h3>
+                <p>{product.price} So'm</p>
+            </div>
+            <button onClick={() => addToCart(product)}>Click me</button>
+        </div>
+    )
+}
+
+const data = {name: "tovar", price: "10"};
 const Cart = () => (
     <div className="w-full h-screen">
         <Uzum />
@@ -21,6 +37,7 @@ const Cart = () => (
         <Card2 />
         <div className="h-10"></div>
         <Footer />
+        <Calc product={data} />
     </div>
 )
 
