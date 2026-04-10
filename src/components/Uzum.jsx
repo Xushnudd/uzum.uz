@@ -17,17 +17,26 @@ function Uzum() {
 
   return (
     <>
-      <div className="bg-gray-200 flex gap-1 py-3">
-        <div onClick={changeSt} className="px-5 cursor-pointer"><i className="fa-solid fa-location-dot" ></i>Toshkent<i class="fa-solid fa-chevron-down" ></i></div>
-        <Link to={"/uz/about/delivery-points"} className="text-gray-800 pr-75">Topshirish punktlari</Link>
-        <Link to={"https://seller.uzum.uz/"} className="text-blue-700 font-bold border border-l-gray-200 border-t-gray-200 border-b-gray-200 border-r-gray-500 pr-5">Sotuvchi bo'lish</Link>
-        <Link to={"https://promo.uzum.uz/uz/promo/pvz"} className="text-blue-700 font-bold pl-5 pr-5">Topshirish punktini ochish</Link>
-        <Link to={"/uz/faq"} className="text-gray-600 ">Savol-javob</Link>
-        <div className="text-gray-600 pr-5">Buyurtmalarim</div>
-        <img src="/uzbek flag.png" alt="" className="w-5 h-5 rounded-full" />   <div className="pr-5 pl-1">O'zbekcha</div>
+      <div className="w-full py-3 bg-gray-200 flex justify-between">
+        <div className="w-3/10 flex justify-start">
+          <div onClick={changeSt} className="px-5 cursor-pointer"><i className="fa-solid fa-location-dot" ></i>Toshkent<i class="fa-solid fa-chevron-down" ></i></div>
+          <Link to={"/uz/about/delivery-points"} className="text-gray-800">Topshirish punktlari</Link>
+        </div>
+        <div className="w-7/10 flex justify-between">
+          <div className="flex gap-3">
+            <Link to={"https://seller.uzum.uz/"} className="text-blue-700">Sotuvchi bo'lish</Link>
+            <div className="h-full border border-gray-500"></div>
+            <Link to={"https://promo.uzum.uz/uz/promo/pvz"} className="text-blue-700 font-bold">Topshirish punktini ochish</Link>
+          </div>
+          <Link to={"/uz/faq"} className="text-gray-600 ">Savol-javob</Link>
+          <div className="text-gray-600">Buyurtmalarim</div>
+          <div className="flex gap-1">
+            <img src="/uzbek flag.png" alt="" className="w-5 h-5 rounded-full" /><div className="">O'zbekcha</div>
+          </div>
+        </div>
       </div>
 
-      <div className="flex mt-5">
+      <div className="w-full flex mt-5">
         <Link to={"/"} className="flex"><img src="/uzum2.png" alt="" className="w-10 h-10 rounded-full ml-5" />  <div className="text-blue-600 text-2xl font-bold pl-5">UZUM MARKET </div></Link>
         <div className="text-blue-600 border border-blue-100 w-max bg-blue-100  rounded p-1 pl-5 pr-5 ml-10"><i className="fa-solid fa-diagram-next pr-5" ></i>Katalog</div>
         <input type="text" placeholder="Mahsulotlar Izlash" className="border border-gray-300 pr-50 pl-10 ml-10" />
@@ -37,7 +46,7 @@ function Uzum() {
         <Link to={"/uz/cart"} className="pl-10"><i className="fa-solid fa-cart-shopping pr-5" ></i>Savat</Link>
       </div>
 
-      <div className="mt-5 flex">
+      <div className="w-full mt-5 flex">
         <div className="pl-5"><i className="fa-solid fa-fire pr-5" ></i>Hafta tovarlari</div>
         <div className="pl-5"><i className="fa-solid fa-shirt pr-5"></i>Bahorgi kolleksiya</div>
         <div className="pl-5"><i className="fa-solid fa-pump-soap pr-5" ></i>Sizning go'zalligingiz</div>
@@ -48,7 +57,7 @@ function Uzum() {
         <div className="pl-5 text-gray-500">Turizm,baliq ovi va ovchilik</div>
         <div className="pl-5 text-gray-500">Yana<i className="fa-solid fa-chevron-down" ></i></div>
       </div>
-      <div onClick={changeSt}><Katalog on={st}/></div>
+      <div onClick={changeSt}><Katalog on={st} /></div>
       <div>
         {ph ? <div className="absolute left-1/3 z-30"><PhoneInput /></div> : null}
       </div>

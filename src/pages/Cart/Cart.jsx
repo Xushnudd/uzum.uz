@@ -18,14 +18,22 @@ const EmptyCart = () => (
 )
 
 const FullCart = ({ items }) => (
-    <div className="flex flex-col items-center">
-        <h2 className="text-xl font-bold">Savatingizda {items.length} ta mahsulot bor:</h2>
-        {items.map((item, index) => (
-            <div key={index} className="border p-2 my-1 w-80 flex justify-between">
-                <span>{item.about}</span>
-                <span className="font-bold">{item.price}</span>
-            </div>
-        ))}
+    <div className="w-full flex gap-5">
+        <div className="w-2/3 border border-gray-300 flex flex-col items-center">
+            <h2 className="text-xl font-bold">Savatingizda {items.length} ta mahsulot bor:</h2>
+
+            {items.map((item, index) => (
+                <div key={index} className="w-19/20 border-t border-gray-400">
+                    <div className="mt-5 flex flex-col">
+                        <span className="text-gray-500">Uzum Market Yetkazib berishi</span>
+                        <span>Ertaga yetkazib beramiz</span>
+                    </div>
+                    <span>{item.about}</span>
+                    <span className="font-bold">{item.price}</span>
+                </div>
+            ))}
+        </div>
+        <div className="w-1/3">as</div>
     </div>
 )
 
@@ -35,12 +43,14 @@ const Cart = () => {
     return (
         <div className="w-full min-h-screen">
             <Uzum />
-            <div className="w-full py-20">
-                {cartItems.length === 0 ? <EmptyCart /> : <FullCart items={cartItems} />}
+            <div className="m-auto w-300">
+                <div className="w-full py-20">
+                    {cartItems.length === 0 ? <EmptyCart /> : <FullCart items={cartItems} />}
+                </div>
+                <Card2 />
+                <div className="h-10"></div>
+                <Footer />
             </div>
-            <Card2 />
-            <div className="h-10"></div>
-            <Footer />
         </div>
     );
 };
