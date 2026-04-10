@@ -4,41 +4,45 @@ import Footer from "../../components/Footer";
 import Uzum from "../../components/Uzum";
 import useCartStore from "../../store/CartStore";
 
-function Calc({product}) {
-    const cartItems = useCartStore((state) => state.cartItems);
-    const addToCart = useCartStore((state) => state.addToCart);
-    return (
-        <div>
-            <div>
-                <h3>{product.name}</h3>
-                <p>{product.price} So'm</p>
-            </div>
-            <button onClick={() => addToCart(product)}>Click me</button>
+const EmptyCart = () => (
+    <div className="w-full h-full flex flex-col justify-center items-center gap-10">
+        <img src="/basket/catUzum.png" alt="Mushuk rasmi" className="w-32" />
+        <div className="w-100 text-center">
+            <h2 className="py-10 text-2xl font-bold">Savatingiz hozircha bo‘sh</h2>
+            <p>Bosh sahifadan boshlang — kerakli tovarni qidiruv orqali topishingiz yoki to‘plamlarni ko‘rishingiz mumkin</p>
+            <Link to="/">
+                <button className="my-5 bg-gray-200 font-bold p-2 rounded cursor-pointer hover:bg-gray-300">Bosh sahifa</button>
+            </Link>
         </div>
-    )
-}
-
-const data = {name: "tovar", price: "10"};
-const Cart = () => (
-    <div className="w-full h-screen">
-        <Uzum />
-        <div className="w-full h-[40%] my-20">
-            <div className="w-full h-full flex flex-col justify-center items-center gap-10">
-                <img src="/basket/catUzum.png" alt="Mushuk rasmi" className="w-30" />
-                <div className="w-100 text-center">
-                    <h2 className="py-10 text-2xl font-bold">Savatingiz hozircha bo‘sh</h2>
-                    <p>Bosh sahifadan boshlang — kerakli tovarni qidiruv orqali topishingiz yoki to‘plamlarni ko‘rishingiz mumkin</p>
-                    <Link to={"/"}>
-                    <button className="my-5 bg-gray-200 font-bold p-2 rounded cursor-pointer hover:bg-gray-300">Bosh sahifa</button>
-                    </Link>
-                </div>
-            </div>
-        </div>
-        <Card2 />
-        <div className="h-10"></div>
-        <Footer />
-        <Calc product={data} />
     </div>
 )
 
-export default Cart
+const FullCart = ({ items }) => (
+    <div className="flex flex-col items-center">
+        <h2 className="text-xl font-bold">Savatingizda {items.length} ta mahsulot bor:</h2>
+        {items.map((item, index) => (
+            <div key={index} className="border p-2 my-1 w-80 flex justify-between">
+                <span>{item.about}</span>
+                <span className="font-bold">{item.price}</span>
+            </div>
+        ))}
+    </div>
+)
+
+const Cart = () => {
+    const cartItems = useCartStore((state) => state.cartItems);
+
+    return (
+        <div className="w-full min-h-screen">
+            <Uzum />
+            <div className="w-full py-20">
+                {cartItems.length === 0 ? <EmptyCart /> : <FullCart items={cartItems} />}
+            </div>
+            <Card2 />
+            <div className="h-10"></div>
+            <Footer />
+        </div>
+    );
+};
+
+export default Cart;
