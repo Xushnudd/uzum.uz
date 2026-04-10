@@ -3,6 +3,7 @@ import Card2 from "../../components/Card2";
 import Footer from "../../components/Footer";
 import Uzum from "../../components/Uzum";
 import useCartStore from "../../store/CartStore";
+import Buy from "./Buy";
 
 const EmptyCart = () => (
     <div className="w-full h-full flex flex-col justify-center items-center gap-10">
@@ -18,7 +19,7 @@ const EmptyCart = () => (
 )
 
 const FullCart = ({ items }) => (
-    <div className="w-full flex gap-5">
+    <div className="w-full lg:flex lg:gap-5">
         <div className="w-2/3 border border-gray-300 flex flex-col items-center">
             <h2 className="text-xl font-bold">Savatingizda {items.length} ta mahsulot bor:</h2>
 
@@ -26,14 +27,24 @@ const FullCart = ({ items }) => (
                 <div key={index} className="w-19/20 border-t border-gray-400">
                     <div className="mt-5 flex flex-col">
                         <span className="text-gray-500">Uzum Market Yetkazib berishi</span>
-                        <span>Ertaga yetkazib beramiz</span>
+                        <span className="text-xl font-bold">Ertaga yetkazib beramiz</span>
                     </div>
-                    <span>{item.about}</span>
-                    <span className="font-bold">{item.price}</span>
+                    <div className="flex items-center gap-3">
+                        <input type="checkbox" defaultChecked name="" id="" />
+                        <img src={item.picture} alt="" className="w-30" />
+                        <div className="h-full w-max flex flex-col justify-start">
+                            <span className="w-max h-max uppercase bg-pink-400 p-0.5 text-[9px] text-white font-bold rounded">Arzon narx kafolati</span>
+                            <span>{item.about}</span>
+                        </div>
+                        <div className="w-150 flex flex-col">
+                            <span className="mt-5">Sotuvchi: {item.sellers ?? "Nomsiz"}</span>
+                            <span className="text-violet-500 font-bold">Narxi: {item.price} so'm</span>
+                        </div>
+                    </div>
                 </div>
             ))}
         </div>
-        <div className="w-1/3">as</div>
+        <Buy />
     </div>
 )
 

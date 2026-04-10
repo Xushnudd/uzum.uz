@@ -29,7 +29,7 @@ function Uzum() {
             <Link to={"https://promo.uzum.uz/uz/promo/pvz"} className="text-blue-700 font-bold">Topshirish punktini ochish</Link>
           </div>
           <Link to={"/uz/faq"} className="text-gray-600 ">Savol-javob</Link>
-          <div className="text-gray-600">Buyurtmalarim</div>
+          <div onClick={changePh} className="text-gray-600 cursor-pointer">Buyurtmalarim</div>
           <div className="flex gap-1">
             <img src="/uzbek flag.png" alt="" className="w-5 h-5 rounded-full" /><div className="">O'zbekcha</div>
           </div>
