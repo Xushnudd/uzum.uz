@@ -1,5 +1,6 @@
 import { Routes, Route } from "react-router-dom"
 
+import Top from "../pages/Top"
 
 import LandingPage from "../pages/LandingPage"
 import DeliveryPoints from "../pages/delivery-points/delivery-points"
@@ -18,6 +19,8 @@ function App() {
                 <Route path="/uz/faq" element={<Faq />} />
                 <Route path="/uz/cart" element={<Cart />} />
             </Routes>
+
+            <Top />
         </div>
         </>
     )
