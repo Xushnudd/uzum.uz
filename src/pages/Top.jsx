@@ -1,8 +1,9 @@
+import Cards from "../components/Cards"
 function Top() {
     return (
         <>
-            <div className="m-5 border border-white w-max">
-                <div>
+            <div className="m-5 border border-white w-max flex">
+                <div className="">
                     <div>
                         <div className="text-xl"> Turkumlar</div>
                         <div className="text-sm border border-white w-max p-1 pl-2 rounded-md hover:border-gray-400 hover:bg-gray-400">elektronika</div>
@@ -63,7 +64,40 @@ function Top() {
                                 <div><input type="checkbox" className="mr-2" />pushti</div>
                             </div>
                         </div>
+                        <div>
+                            <div className="text-xl mt-5 mb-3">Autentifikatsiya</div>
+                            <div>
+                                <div><input type="checkbox" className="mr-2" />Yuzni aniqlash </div>
+                                <div><input type="checkbox" className="mr-2" />Barmoq izi skaneri</div>
+                                <div><input type="checkbox" className="mr-2" />Ko'zning to'r pardasini aniqlash</div>
+                            </div>
+                        </div>
+                        <div>
+                            <div className="text-xl mt-5 mb-3">Operativ xotira, Gb</div>
+                            <div>
+                                <div><input type="checkbox" className="mr-2 " />W&O</div>
+                                <div><input type="checkbox" className="mr-2" />Apple</div>
+                                <div><input type="checkbox" className="mr-2" />Corn</div>
+                                <div><input type="checkbox" className="mr-2" />Honor</div>
+                                <div><input type="checkbox" className="mr-2" />HTS</div>
+                                <div><input type="checkbox" className="mr-2" />Huawei</div>
+                            </div>
+                        </div>
+                         <div>
+                            <div className="text-xl mt-5 mb-3">Ishlab chiqarish mamlakati </div>
+                            <div>
+                                <div><input type="checkbox" className="mr-2 " />Vyetnam</div>
+                                <div><input type="checkbox" className="mr-2" />Hindiston, Vyetnam, Pokiston, Urugvay, Argentina, Myanma</div>
+                                <div><input type="checkbox" className="mr-2" />Xitoy</div>
+                                <div><input type="checkbox" className="mr-2" />AQSH</div>
+                                <div><input type="checkbox" className="mr-2" />Janubiy Koreya</div>
+                               
+                            </div>
+                        </div>
                     </div>
+                </div>
+                <div className="w-200">
+                    <Cards/>
                 </div>
             </div>
         </>

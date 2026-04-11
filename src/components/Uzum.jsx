@@ -48,14 +48,14 @@ function Uzum() {
         </div>
 
         <div className="w-full mt-5 flex">
-          <div className="pl-5"><i className="fa-solid fa-fire pr-5" ></i>Hafta tovarlari</div>
-          <div className="pl-5"><i className="fa-solid fa-shirt pr-5"></i>Bahorgi kolleksiya</div>
-          <div className="pl-5"><i className="fa-solid fa-pump-soap pr-5" ></i>Sizning go'zalligingiz</div>
-          <div className="pl-5"><i className="fa-solid fa-guitar pr-5"></i>Xobbi va ijod</div>
-          <div className="pl-5"><i className="fa-solid fa-mobile-screen pr-5" ></i>Smartfonlari</div>
-          <div className="pl-5"><i className="fa-solid fa-rug pr-5" ></i>Ramazon Hayiti</div>
-          <div className="pl-5 text-gray-500">Mebel</div>
-          <div className="pl-5 text-gray-500">Turizm,baliq ovi va ovchilik</div>
+          <Link to={"/uz/week-things"} className="pl-5"><i className="fa-solid fa-fire pr-5" ></i>Hafta tovarlari</Link>
+          <Link to={"/uz/week-things"} className="pl-5"><i className="fa-solid fa-shirt pr-5"></i>Bahorgi kolleksiya</Link>
+          <Link to={"/uz/week-things"} className="pl-5"><i className="fa-solid fa-pump-soap pr-5" ></i>Sizning go'zalligingiz</Link>
+          <Link to={"/uz/week-things"} className="pl-5"><i className="fa-solid fa-guitar pr-5"></i>Xobbi va ijod</Link>
+          <Link to={"/uz/week-things"} className="pl-5"><i className="fa-solid fa-mobile-screen pr-5" ></i>Smartfonlari</Link>
+          <Link to={"/uz/week-things"} className="pl-5"><i className="fa-solid fa-rug pr-5" ></i>Ramazon Hayiti</Link>
+          <Link to={"/uz/week-things"} className="pl-5 text-gray-500">Mebel</Link>
+          <Link to={"/uz/week-things"} className="pl-5 text-gray-500">Turizm,baliq ovi va ovchilik</Link>
           <div className="pl-5 text-gray-500">Yana<i className="fa-solid fa-chevron-down" ></i></div>
         </div>
         <div onClick={changeSt}><Katalog on={st} /></div>
