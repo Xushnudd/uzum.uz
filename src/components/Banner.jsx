@@ -33,7 +33,7 @@ function Banner() {
                     <button class="text-gray-400 flex items-center gap-1 shrink-0">Yana <i class="fa-solid fa-chevron-down text-[10px]"></i></button>
                 </div>
 
-                <div class="relative group mt-2 rounded-2xl overflow-hidden bg-gradient-to-r from-[#5a00c8] via-[#7000ff] to-[#d686ff] h-[350px] flex items-center px-12">
+                <div class="relative group mt-2 rounded-2xl overflow-hidden bg-linear-to-r from-[#5a00c8] via-[#7000ff] to-[#d686ff] h-87.5 flex items-center px-12">
 
                     <div class="z-10 max-w-lg">
                         <h1 class="text-white text-6xl font-black uppercase leading-tight tracking-tighter italic">
