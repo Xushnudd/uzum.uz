@@ -11,23 +11,23 @@ function Footer() {
                 <div className="flex flex-col gap-2">
                     <h2 className="font-bold">Biz haqimizda</h2>
                     <div className="flex flex-col gap-2 text-gray-600">
-                        <Link>Topshirish punktlari</Link>
-                        <Link>Vakansiyalar</Link>
+                        <Link to={"/uz/about/delivery-points"}>Topshirish punktlari</Link>
+                        <Link to={"/uz/about/careers"}>Vakansiyalar</Link>
                     </div>
                 </div>
                 <div className="flex flex-col gap-2">
                     <h2 className="font-bold">Foydalanuvchilarga</h2>
                     <div className="flex flex-col gap-2 text-gray-600">
                         <Link>Biz bilan bog'lanish</Link>
-                        <Link>Savol Javob</Link>
+                        <Link to={"/uz/faq"}>Savol Javob</Link>
                     </div>
                 </div>
                 <div className="flex flex-col gap-2">
                     <h2 className="font-bold">Tadbirkorlarga</h2>
                     <div className="flex flex-col gap-2 text-gray-600">
-                        <Link>Uzumda soting</Link>
-                        <Link>Sotuvchi kabinetga kirish</Link>
-                        <Link>Topshirish punktini ochish</Link>
+                        <Link to={"https://seller.uzum.uz/"}>Uzumda soting</Link>
+                        <Link to={"https://seller.uzum.uz/"}>Sotuvchi kabinetga kirish</Link>
+                        <Link to={"/uz/about/delivery-points"}>Topshirish punktini ochish</Link>
                     </div>
                 </div>
                 <div className="flex flex-col gap-5">
