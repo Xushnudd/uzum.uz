@@ -49,7 +49,7 @@ function PhoneInput() {
     return (
         <div className="bg-white p-5 pt-2 rounded-2xl w-100 m-5 border ">
             <div className=" text-purple-600 text-xl flex justify-center font-bold mb-10 mt-4">
-              <img src="./uzum2.png" alt="" className="w-7 mr-2" />  uzum ID
+              <img src="/uzum2.png" alt="" className="w-7 mr-2" />  uzum ID
             </div>
             <div className="text-2xl font-semibold mb-5 flex justify-center ">
                 Uzum Market’ga kirish
